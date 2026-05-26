@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   
+    <title>3MR 5alid</title>
+    <link rel="icon" href="favicon.ico">
+<head>
+    <style>
+        /* المتغيرات */
+        :root {
+            --primary-color: #25D366;
+            --tiktok-color: #000000;
+            --instagram-color: #E1306C;
+            --facebook-color: #1877F2;
+            --youtube-color: #FF0000;
+            --whatsapp-color: #25D366;
+            --twitter-color: #1DA1F2;
+            --background: #0f0f0f;
+            --card-background: #1a1a1a;
+            --text-color: #ffffff;
+            .instapay { background:#FFD700; color:#000; }
+        .instapay:hover { transform:scale(1.05); box-shadow:0 0 20px #FFD700; }
+
+        }
+
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        /* صورة الملف الشخصي */
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* العنوان */
+        h1 {
+            color: var(--text-color);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* الوصف */
+        .bio {
+            color: #888;
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Container الروابط */
+        .links-container {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* أزرار الروابط */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .link-btn i {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+ .social-btn {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-btn i {
+            margin-left: 15px;
+            font-size: 24px;
+        }
+
+        /* ألوان كل منصة */
+        .facebook { background: #1877f2; }
+        .twitter { background: #1da1f2; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .linkedin { background: #0077b5; }
+        .youtube { background: #ff0000; }
+        .tiktok { background: #000000; }
+        .whatsapp { background: #25d366; }
+        .telegram { background: #0088cc; }
+        .snapchat { background: #fffc00; color: black; }
+        .pinterest { background: #e60023; }
+        .reddit { background: #ff4500; }
+        .discord { background: #5865f2; }
+
+
+        /* TikTok */
+        .tiktok {
+            background: var(--tiktok-color);
+        }
+
+        /* إنستغرام */
+        .instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        /* فيس بوك */
+        .facebook {
+            background: var(--facebook-color);
+        }
+
+        /* يوتيوب */
+        .youtube {
+            background: var(--youtube-color);
+        }
+
+        /* واتساب */
+        .whatsapp {
+            background: var(--whatsapp-color);
+        }
+        .gmail-btn{
+    display: block;
+    width: 500px;
+    margin: 15px auto;
+    padding: 18px;
+    text-align: center;
+    border-radius: 50px;
+    background: #ea4335;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+        <!-- سناب شات-->
+
+.snapchat { background: #fffc00;
+     color: black; 
+
+}
+
+
+        /* زر التواصل */
+        .contact {
+            background: var(--primary-color);
+        }
+
+        /* الفوتر */
+        footer {
+            margin-top: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* أيقونات */
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            margin-left: 10px;
+        }
+    </style>
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- صورة الملف الشخصي -->
+    <img src="file.jpg" alt="الصورة الشخصية" class="profile-image">
+    
+    <!-- الاسم -->
+    <h1>AMR khaled</h1>
+    
+    <!-- النص التعريفي -->
+    <p class="bio">free man
+        on the top 
+    </p>
+
+    <!-- روابط السوشيال ميديا -->
+    <div class="links-container">
+        
+        <!-- واتساب -->
+        <a href="https://wa.me/+201110337721" class="link-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            تواصل عبر واتساب
+        </a>
+ <a href="https://t.me/AMR5alid3k" class="social-btn telegram" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+                Telegram
+            </a>
+
+        <!-- إنستغرام -->
+        <a href="https://instagram.com/
+3mr5alid3k" class="link-btn instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            تابعني على إنستغرام
+        </a>
+
+        <!-- فيس بوك -->
+        <a href="https://facebook.com/amr29913" class="link-btn facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            صفحتي على فيس بوك
+        </a>
+
+       <a href="https://twitter.com/3mr24363481" class="social-btn twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+
+        <a href="https://tiktok.com/@_3k_35" class="link-btn tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i>
+            تيك توك
+        </a>
+<a href="mailto:amrk29913@gmail.com" class="gmail-btn">
+    <i class="fa-solid fa-envelope"></i>
+    راسلني عبر Gmail
+   <a href="https://discord.gg/3mr5aild" class="social-btn discord" target="_blank">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+
+        <!-- سناب شات -->
+<div></div>
+            <a href="https://snapchat.com/add/amro5Alid" class="social-btn snapchat" target="_blank">
+                <i class="fab fa-snapchat-ghost"></i>
+                Snapchat
+            </a>
+    </div>
+ 
+
+  <!-- الفوتر -->
+    <footer>
+      <p>© <span id="year"></span> <b>3mr 5alid</b> — <span data-lang="rights">All rights reserved2026</span></p>
+       <p><span data-lang="developed">Developed by</span> <a target="_blank" href="https://www.facebook.com/amr29913">amr khaled</a></p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
